@@ -5,25 +5,25 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="None">
   
-  <link rel="shortcut icon" href="img/favicon.ico">
-  <title>Home - 第101次尝试</title>
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Java base - 第101次尝试</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Home";
-    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_name = "Java base";
+    var mkdocs_page_input_path = "java_base.md";
     var mkdocs_page_url = null;
   </script>
   
-  <script src="js/jquery-2.1.1.min.js" defer></script>
-  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
@@ -38,9 +38,9 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> 第101次尝试</a>
+        <a href=".." class="icon icon-home"> 第101次尝试</a>
         <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
@@ -50,9 +50,14 @@
 	<ul class="current">
 	  
           
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
             <li class="toctree-l1 current">
 		
-    <a class="current" href=".">Home</a>
+    <a class="current" href="./">Java base</a>
     <ul class="subnav">
             
     <li class="toctree-l2"><a href="#java">一、Java基础和高级</a></li>
@@ -82,19 +87,19 @@
     <li class="toctree-l2"><a href="#_4">九、分布式缓存</a></li>
     
 
-    <li class="toctree-l2"><a href="#nio">十、线程池、高并发、NIO</a></li>
+    <li class="toctree-l2"><a href="#nio">线程池、高并发、NIO</a></li>
     
 
-    <li class="toctree-l2"><a href="#jvm">十一、JVM相关(面试必考)</a></li>
+    <li class="toctree-l2"><a href="#jvm">JVM相关(面试必考)</a></li>
     
 
-    <li class="toctree-l2"><a href="#_5">十二、分布式相关</a></li>
+    <li class="toctree-l2"><a href="#_5">分布式相关</a></li>
     
 
-    <li class="toctree-l2"><a href="#_6">十三、数据库</a></li>
+    <li class="toctree-l2"><a href="#_6">数据库</a></li>
     
 
-    <li class="toctree-l2"><a href="#redis">十四、Redis&amp;缓存相关</a></li>
+    <li class="toctree-l2"><a href="#redis">Redis&amp;缓存相关</a></li>
     
 
     </ul>
@@ -102,12 +107,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="java_base/">Java base</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="technical/">Technical</a>
+    <a class="" href="../technical/">Technical</a>
 	    </li>
           
         </ul>
@@ -120,7 +120,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">第101次尝试</a>
+        <a href="..">第101次尝试</a>
       </nav>
 
       
@@ -128,11 +128,11 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".">Docs</a> &raquo;</li>
+    <li><a href="..">Docs</a> &raquo;</li>
     
       
     
-    <li>Home</li>
+    <li>Java base</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -239,7 +239,7 @@
 <li>redis的持久化方式，以及项目中用的哪种，为什么</li>
 <li>redis集群的理解，怎么动态增加或者删除一个节点，而保证数据不丢失。（一致性哈希问题）</li>
 </ul>
-<h2 id="nio">十、线程池、高并发、NIO</h2>
+<h2 id="nio">线程池、高并发、NIO</h2>
 <ul>
 <li>分析线程池的实现原理和线程的调度过程</li>
 <li>线程池如何调优</li>
@@ -258,7 +258,7 @@
 <li>简述NIO的最佳实践，比如netty，mina</li>
 <li>TreeMap的实现原理</li>
 </ul>
-<h2 id="jvm">十一、JVM相关(面试必考)</h2>
+<h2 id="jvm">JVM相关(面试必考)</h2>
 <ul>
 <li>JVM内存分代</li>
 <li>Java 8的内存分代改进</li>
@@ -274,7 +274,7 @@
 <li>OOM错误，stackoverflow错误，permgen space错误</li>
 <li>JVM常用参数</li>
 </ul>
-<h2 id="_5">十二、分布式相关</h2>
+<h2 id="_5">分布式相关</h2>
 <ul>
 <li>Dubbo的底层实现原理和机制</li>
 <li>描述一个服务从发布到被消费的详细过程</li>
@@ -296,7 +296,7 @@
 <li>MQ系统的数据如何保证不丢失</li>
 <li>列举出你能想到的数据库分库分表策略；分库分表后，如何解决全表查询的问题。</li>
 </ul>
-<h2 id="_6">十三、数据库</h2>
+<h2 id="_6">数据库</h2>
 <ul>
 <li>MySQL InnoDB存储的文件结构</li>
 <li>索引树是如何维护的？</li>
@@ -308,7 +308,7 @@
 <li>高并发下如何做到安全的修改同一行数据，乐观锁和悲观锁是什么，INNODB的行级锁有哪2种，解释其含义</li>
 <li>数据库会死锁吗，举一个死锁的例子，mysql怎么解决死锁</li>
 </ul>
-<h2 id="redis">十四、Redis&amp;缓存相关</h2>
+<h2 id="redis">Redis&amp;缓存相关</h2>
 <ul>
 <li>Redis的并发竞争问题如何解决了解Redis事务的CAS操作吗</li>
 <li>缓存机器增删如何对系统影响最小，一致性哈希的实现</li>
@@ -327,8 +327,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="java_base/" class="btn btn-neutral float-right" title="Java base">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../technical/" class="btn btn-neutral float-right" title="Technical">Next <span class="icon icon-circle-arrow-right"></span></a>
       
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -354,19 +356,16 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-        <span style="margin-left: 15px"><a href="java_base/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+        <span style="margin-left: 15px"><a href="../technical/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
-    <script>var base_url = '.';</script>
-    <script src="js/theme.js" defer></script>
-      <script src="search/main.js" defer></script>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
 
 </body>
 </html>
-
-<!--
-MkDocs version : 1.0.4
-Build Date UTC : 2020-05-25 10:26:34
--->
