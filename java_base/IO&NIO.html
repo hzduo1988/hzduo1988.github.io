@@ -1,0 +1,28 @@
+
+<p>Java IO（Input/Output）与NIO（New IO 或 Non-blocking IO）在Java中都是用于处理输入输出操作的机制，但它们之间存在显著的差异。以下是Java IO与NIO之间的主要区别：</p>
+<h3 class="atx" id="1-阻塞与非阻塞">1. 阻塞与非阻塞</h3>
+<ul>
+<li><strong>Java IO</strong>：是阻塞IO。这意味着当线程调用read()或write()方法时，如果该线程对应的IO操作尚未完成（例如，没有数据可读或数据尚未写入完毕），该线程将被阻塞，直到IO操作完成。在此期间，线程不能执行其他任务。</li>
+<li><strong>Java NIO</strong>：是非阻塞IO。当线程向通道（Channel）发起读取或写入数据的请求时，如果当前没有数据可读或数据尚未写入完毕，线程不会被阻塞，而是可以立即返回去执行其他任务。当数据准备好时，线程可以通过其他方式（如选择器Selector）被通知。</li>
+</ul>
+<h3 class="atx" id="2-面向流与面向缓冲区">2. 面向流与面向缓冲区</h3>
+<ul>
+<li><strong>Java IO</strong>：是面向流的。数据直接从输入流读取到程序中，或者从程序写入到输出流中。在Java IO中，没有缓冲区的概念，或者说缓冲区是隐式的，由Java虚拟机（JVM）管理。</li>
+<li><strong>Java NIO</strong>：是面向缓冲区的。数据被读取到一个缓冲区中，然后程序可以从缓冲区中处理这些数据。同样，当需要写入数据时，也是先写入缓冲区，然后再由缓冲区写入到通道中。缓冲区为NIO操作提供了更大的灵活性和性能优势。</li>
+</ul>
+<h3 class="atx" id="3-通道（channel）与流（stream）">3. 通道（Channel）与流（Stream）</h3>
+<ul>
+<li><strong>Java IO</strong>：基于流（Stream）模型，包括字节流（如FileInputStream、FileOutputStream）和字符流（如FileReader、FileWriter）。流是单向的，只能用于读取或写入数据。</li>
+<li><strong>Java NIO</strong>：基于通道（Channel）模型，通道是双向的，既可以用于读取数据，也可以用于写入数据。通道与缓冲区紧密配合，数据总是通过缓冲区进行传输。</li>
+</ul>
+<h3 class="atx" id="4-选择器（selector）">4. 选择器（Selector）</h3>
+<ul>
+<li><strong>Java IO</strong>：不支持选择器。每个IO操作都需要一个独立的线程来处理，这在高并发场景下可能导致大量的线程创建和销毁，从而影响性能。</li>
+<li><strong>Java NIO</strong>：支持选择器（Selector）。选择器允许单个线程同时处理多个通道（Channel）的IO事件。这大大提高了线程的利用率和系统的整体性能。</li>
+</ul>
+<h3 class="atx" id="5-性能和资源利用率">5. 性能和资源利用率</h3>
+<ul>
+<li><strong>Java IO</strong>：由于阻塞特性和面向流的模型，Java IO在处理大量并发连接时可能会导致大量的线程被阻塞，从而影响性能和资源利用率。</li>
+<li><strong>Java NIO</strong>：由于非阻塞特性和面向缓冲区的模型，以及支持选择器，Java NIO在处理大量并发连接时能够显著提高性能和资源利用率。</li>
+</ul>
+<p>综上所述，Java IO与NIO在阻塞与非阻塞、面向流与面向缓冲区、通道与流、选择器支持以及性能和资源利用率等方面存在显著的差异。在选择使用哪种IO机制时，需要根据具体的应用场景和需求来决定。</p>
